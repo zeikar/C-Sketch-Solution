@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int T;
+
+	cin >> T;
+
+	while(T--)
+	{
+		int a, b, result = 1;
+
+		cin >> a >> b;
+
+		while(b--)
+		{
+			result *= a;
+			result %= 10;
+		}
+
+		if(result == 0)
+		{
+			result = 10;
+		}
+		cout << result << endl;
+	}
+}
