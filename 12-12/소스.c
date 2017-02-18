@@ -32,7 +32,7 @@ int main()
 
 	writeFile = fopen(writeFileName, "w");
 
-	fputs("순번 학번 성명 중간 기말 과제 출석 총합, 학점\n", writeFile);
+	fputs("순번 학번 성명 중간 기말 과제 출석 총합 학점\n", writeFile);
 
 	// 한 글자씩 writefile의 뒤에 추가
 	while (!feof(readFile))
